@@ -6,7 +6,7 @@ import About from "./components/pages/About";
 import NotFoundPage from "./components/pages/NotFoundPage";
 import AddContact from "./components/contacts/AddContact";
 import EditContact from "./components/contacts/EditContact";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Provider>
-        <HashRouter>
+        <BrowserRouter>
           <div className="App">
             <Header branding="Contact Manager" />
             <div className="container">
@@ -28,7 +28,7 @@ class App extends Component {
               </Switch>
             </div>
           </div>
-        </HashRouter>
+        </BrowserRouter>
       </Provider>
     );
   }
